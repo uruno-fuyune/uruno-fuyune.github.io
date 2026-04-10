@@ -1,0 +1,98 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    gap: 40px;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-break: strict;
+    font-size: 16px;
+}
+
+.title {
+    justify-self: center;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 64px;
+}
+
+.subtitle {
+    justify-self: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.link {
+    justify-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    line-height: 2em;
+}
+
+.text {
+    justify-self: center;
+    max-width: 50rem;
+    margin: 0rem;
+    line-height: 1.5em;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.png {
+
+    justify-self: center;
+    object-fit: contain;
+    max-width: 50rem;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+footer {
+    padding: 1rem;
+    justify-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    color: rgb(0, 0, 255);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(200, 200, 255);
+    font-weight: 900;
+    text-decoration: underline
+}
+
+p {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+img {
+    width: 100%;
+    margin: 0rem 1rem 0rem 1rem;
+}
