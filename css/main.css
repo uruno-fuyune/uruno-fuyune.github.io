@@ -24,7 +24,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.box{
+.box {
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
@@ -54,7 +54,7 @@ body {
     font-weight: 320;
     font-style: normal;
     font-size: calc(8/5*1rem);
-    line-height: calc(8/4*1rem);
+    line-height: calc(8/3*1rem);
     font-feature-settings: "palt";
 }
 
@@ -106,7 +106,6 @@ footer {
 
 a {
     color: rgb(0, 0, 255);
-    font-weight: 300;
     text-decoration: none;
 }
 
