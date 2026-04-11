@@ -1,11 +1,12 @@
 html {
+
     width: auto;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 350;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
@@ -15,9 +16,7 @@ body {
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
-    gap: 40px;
-    overflow-wrap: anywhere;
-    word-break: normal;
+    gap: 0;
     line-break: strict;
     margin: 0 20px;
     padding: 0 0;
@@ -25,15 +24,24 @@ body {
     color: rgb(0, 0, 0);
 }
 
-body > *:first-child{
-    margin-top: 20px;
+.box{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    gap: 40px;
+    justify-self: center;
+    max-width: 50rem;
+}
+
+.box>*:first-child {
+    margin: 200px 0;
 }
 
 .title {
     justify-self: center;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 250;
     font-style: normal;
     font-size: calc(8/3*1rem);
     font-feature-settings: "palt";
@@ -43,10 +51,10 @@ body > *:first-child{
     justify-self: center;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 320;
     font-style: normal;
-    font-size: calc(8/4*1rem);
-    line-height: calc(8/3*1rem);
+    font-size: calc(8/5*1rem);
+    line-height: calc(8/4*1rem);
     font-feature-settings: "palt";
 }
 
@@ -69,11 +77,6 @@ body > *:first-child{
     justify-self: center;
     line-height: calc(8/5*1rem);
     letter-spacing: 0.08em;
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    
 }
 
 .img {
@@ -82,18 +85,23 @@ body > *:first-child{
     object-fit: contain;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 550;
     font-style: normal;
 }
 
-.img p:nth-of-type(n+2){
+.img p:nth-of-type(n+2) {
 
     font-size: calc(8/9*1rem);
+    font-weight: 580;
 }
 
 footer {
     margin-bottom: 20px;
     justify-self: center;
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
 }
 
 a {
@@ -112,12 +120,19 @@ p {
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 50rem;
 }
 
 img {
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 50rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        font-size: 14px;
+    }
+
+
 }
