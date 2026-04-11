@@ -18,10 +18,14 @@ body {
     overflow-wrap: anywhere;
     word-break: normal;
     line-break: strict;
-    margin: 0rem 0rem;
-    padding: 0rem 1rem;
+    margin: 0 20px;
+    padding: 0 0;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+body > *:first-child{
+    margin-top: 20px;
 }
 
 .title {
@@ -30,7 +34,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 40px;
+    font-size: calc(8/3*1rem);
+    font-feature-settings: "palt";
 }
 
 .subtitle {
@@ -39,27 +44,35 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 40px;
+    font-size: calc(8/4*1rem);
+    line-height: calc(8/3*1rem);
+    font-feature-settings: "palt";
 }
 
 .link {
     display: grid;
     gap: 20px;
     justify-self: center;
-    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-size: calc(8/7*1rem);
+}
+
+.link a {
+    justify-self: center;
 }
 
 .text {
     justify-self: center;
-    line-height: 1.5em;
+    line-height: calc(8/5*1rem);
+    letter-spacing: 0.08em;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    
 }
 
 .img {
@@ -72,8 +85,13 @@ body {
     font-style: normal;
 }
 
+.img p:nth-of-type(n+2){
+
+    font-size: calc(8/9*1rem);
+}
+
 footer {
-    padding: 0rem 0rem 1rem 0rem;
+    margin-bottom: 20px;
     justify-self: center;
 }
 
@@ -90,15 +108,15 @@ a:hover {
 }
 
 p {
-    margin: 0rem 0rem;
-    padding: 0rem 0rem;
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-width: 50rem;
 }
 
 img {
-    margin: 0rem 0rem;
-    padding: 0rem 0rem;
+    margin: 0;
+    padding: 0;
     width: 100%;
     max-width: 50rem;
 }
