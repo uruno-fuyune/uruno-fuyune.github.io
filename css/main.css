@@ -76,7 +76,7 @@ body {
 .text {
     justify-self: center;
     line-height: calc(8/5*1rem);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
 }
 
 .img {
@@ -85,14 +85,16 @@ body {
     object-fit: contain;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 530;
+    letter-spacing: 0.05em;
     font-style: normal;
 }
 
 .img p:nth-of-type(n+2) {
 
     font-size: calc(8/9*1rem);
-    font-weight: 580;
+    font-weight: 550;
+    letter-spacing: 0.05em;
 }
 
 footer {
@@ -100,7 +102,7 @@ footer {
     justify-self: center;
     font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
-    font-weight: 550;
+    font-weight: 530;
     font-style: normal;
 }
 
@@ -130,7 +132,7 @@ img {
 @media screen and (max-width: 600px) {
 
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
 
