@@ -1,109 +1,61 @@
-html {
+@font-face {
+    font-family: "TODAY";
+    src: url("font/TODAY.otf") format("otf");
+}
 
-    width: auto;
+html {
+    width: 100%;
     height: 100%;
+    max-width: none;
+    gap: 0;
     margin: 0;
     padding: 0;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
+    line-break: strict;
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        font-size: 13px;
+    }
+
+
+}
+
+body,
+header,
+footer,
+div,
+p,
+img {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    justify-self: center;
 }
 
 body {
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     justify-content: center;
-    gap: 0;
-    line-break: strict;
-    margin: 0 20px;
-    padding: 0 0;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
-.box {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: center;
-    gap: 40px;
-    justify-self: center;
-    max-width: 50rem;
-}
-
-.box>*:first-child {
-    margin: 200px 0;
-}
-
-.title {
-    justify-self: center;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 250;
-    font-style: normal;
-    font-size: calc(8/3*1rem);
-    font-feature-settings: "palt";
-}
-
-.subtitle {
-    justify-self: center;
-    font-family: "Noto Sans JP", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 320;
-    font-style: normal;
-    font-size: calc(8/5*1rem);
-    line-height: calc(8/3*1rem);
-    font-feature-settings: "palt";
-}
-
-.link {
-    display: grid;
-    gap: 20px;
-    justify-self: center;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: calc(8/7*1rem);
-}
-
-.link a {
-    justify-self: center;
-}
-
-.text {
-    justify-self: center;
-    line-height: calc(8/5*1rem);
-    letter-spacing: 0.05em;
-}
-
-.img {
-
-    justify-self: center;
-    object-fit: contain;
-    font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
-    font-weight: 530;
-    letter-spacing: 0.05em;
-    font-style: normal;
-}
-
-.img p:nth-of-type(n+2) {
-
-    font-size: calc(8/9*1rem);
-    font-weight: 550;
-    letter-spacing: 0.05em;
-}
-
 footer {
+    width: auto;
     margin-bottom: 20px;
-    justify-self: center;
     font-family: "Noto Serif JP", serif;
-    font-optical-sizing: auto;
     font-weight: 530;
-    font-style: normal;
 }
 
 a {
@@ -117,23 +69,93 @@ a:hover {
     text-decoration: underline
 }
 
-p {
-    margin: 0;
-    padding: 0;
+
+.box,
+.title,
+.subtitle,
+.text,
+.link,
+.img {
     width: 100%;
+    justify-self: center;
 }
 
-img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+.box {
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin: 20px;
+    max-width: 50rem;
 }
 
-@media screen and (max-width: 600px) {
+.box>*:first-child {
+    margin: 300px 0;
+}
 
-    html {
-        font-size: 13px;
-    }
+.title {
+    width: auto;
+    font-weight: 250;
+    font-size: calc(8/3*1rem);
+    font-feature-settings: "palt";
+}
 
+.subtitle {
+    width: auto;
+    font-weight: 320;
+    font-size: calc(8/5*1rem);
+    line-height: calc(8/3*1rem);
+    font-feature-settings: "palt";
+}
 
+.text {
+    line-height: calc(8/5*1rem);
+    letter-spacing: 0.1em;
+}
+
+.link {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: calc(8/7*1rem);
+}
+
+.link a {
+    justify-self: center;
+}
+
+.img {
+    object-fit: contain;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 530;
+    letter-spacing: 0.1em;
+}
+
+.img p:nth-of-type(n+2) {
+
+    font-size: calc(8/9*1rem);
+    font-weight: 550;
+    letter-spacing: 0.1em;
+}
+
+.today-box {
+    width: 100%;
+    aspect-ratio: 1.30/1;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "TODAY", sans-serif;
+}
+
+.today-box p {
+    width: auto;
+    justify-self: center;
 }
