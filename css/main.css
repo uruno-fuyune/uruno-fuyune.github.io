@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TODAY";
-    src: url("../font/TODAY.otf") format("otf");
+    src: url("../font/TODAY.otf");
 }
 
 html {
