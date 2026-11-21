@@ -104,7 +104,7 @@ a:hover {
 }
 
 .box>*:first-child {
-    margin: 300px 0;
+    margin: 250px 0;
 }
 
 .title {
@@ -120,7 +120,6 @@ a:hover {
     font-size: calc(8/5*1rem);
     line-height: calc(8/3*1rem);
     font-feature-settings: "palt";
-    --latin-weight: 260;
 }
 
 .text {
@@ -172,4 +171,11 @@ a:hover {
 .today-box p {
     width: auto;
     justify-self: center;
+}
+
+.sticker {
+    width: 300px;
+    height: auto;
+    transform: rotate(-3deg);
+    filter: brightness(0.9)drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.5))
 }
