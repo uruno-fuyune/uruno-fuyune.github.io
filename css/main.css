@@ -3,6 +3,18 @@
     src: url("../font/TODAY.otf");
 }
 
+@font-face {
+    font-family: "Venice";
+    src: url("../font/GenEiNombre_v2.0/GenEiNombre-Venice.ttf");
+    unicode-range: U+0030-0039;
+}
+
+@font-face {
+    font-family: "Roman";
+    src: url("../font/GenEiNombre_v2.0/GenEiNombre-Roman.ttf");
+    unicode-range: U+0030-0039;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -10,10 +22,10 @@ html {
     gap: 0;
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Montserrat", "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 320;
     font-size: 16px;
     -webkit-text-size-adjust: 100%;
     line-break: strict;
@@ -54,8 +66,8 @@ body {
 footer {
     width: auto;
     margin-bottom: 20px;
-    font-family: "Noto Serif JP", serif;
-    font-weight: 530;
+    font-family: "Roman", "Noto Serif JP", serif;
+    font-weight: 500;
 }
 
 a {
@@ -104,10 +116,11 @@ a:hover {
 
 .subtitle {
     width: auto;
-    font-weight: 320;
+    font-weight: 200;
     font-size: calc(8/5*1rem);
     line-height: calc(8/3*1rem);
     font-feature-settings: "palt";
+    --latin-weight: 260;
 }
 
 .text {
@@ -122,7 +135,7 @@ a:hover {
     justify-content: center;
     gap: 20px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 250;
     font-size: calc(8/7*1rem);
 }
 
@@ -132,15 +145,16 @@ a:hover {
 
 .img {
     object-fit: contain;
-    font-family: "Noto Serif JP", serif;
-    font-weight: 530;
+    font-family: "Roman", "Noto Serif JP", serif;
+    font-feature-settings: "onum";
+    font-weight: 350;
     letter-spacing: 0.1em;
 }
 
 .img p:nth-of-type(n+2) {
 
     font-size: calc(8/9*1rem);
-    font-weight: 550;
+    font-weight: 450;
     letter-spacing: 0.1em;
 }
 
