@@ -111,7 +111,7 @@ a:hover {
 }
 
 .text {
-    line-height: calc(8/5*1rem);
+    line-height: calc(8/4*1rem);
     letter-spacing: 0.1em;
 }
 
