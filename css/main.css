@@ -66,7 +66,7 @@ body {
 footer {
     width: auto;
     margin-bottom: 20px;
-    font-family: "Roman", "Noto Serif JP", serif;
+    font-family: "Venice", "Noto Serif JP", serif;
     font-weight: 500;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 
 .img {
     object-fit: contain;
-    font-family: "Roman", "Noto Serif JP", serif;
+    font-family: "Venice", "Noto Serif JP", serif;
     font-feature-settings: "onum";
     font-weight: 350;
     letter-spacing: 0.1em;
@@ -177,5 +177,5 @@ a:hover {
     width: 300px;
     height: auto;
     transform: rotate(-3deg);
-    filter: brightness(0.9)drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.5))
+    filter: contrast(0.8)drop-shadow(-1px 2px 1px rgba(0, 0, 0, 0.5))
 }
